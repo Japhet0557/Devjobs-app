@@ -113,15 +113,15 @@
         </div>
     </div>
 
-    
-    <script type="module" src="./node_modules/handlebars/dist/handlebars.js"></script>
-    <script type="module" id="templateHB" type="text/x-handlebars-template">
+    <script type="module" src="./script.js"></script>
+    <script src="./node_modules/handlebars/dist/handlebars.js"></script>
+    <script id="templateHB" type="text/x-handlebars-template">
 
     
         {{#each jobs}}
             <div class="col-sm-4 col-md-6 col-lg-4">
                 <div class="p-3 bg-midark rounded-2" id="job-card">
-                    <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 text-center px-xs-3 px-6 py-3 mt-n5 rounded-4" style="">
+                    <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 text-center px-xs-3 px-6 py-3 mt-n5 rounded-4" style="background-color: {{this.logoBackground}};">
                         <img src="{{this.logo}}" alt="logo">
                     </div>
                     <div class="d-flex d-row pt-2">
@@ -136,6 +136,6 @@
         {{/each}}
         
     </script>
-    <script type="module" src="./script.js"></script>
+    
 </body>
 </html>
